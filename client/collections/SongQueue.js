@@ -4,7 +4,7 @@ var SongQueue = Songs.extend({
   initialize: function() {
 
 
-    this.on('add', function() {
+    this.on('add enqueue', function() {
       if(this.length === 1) {
         this.playFirst();
       }
